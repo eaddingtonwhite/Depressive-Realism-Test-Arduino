@@ -58,7 +58,7 @@ int modeSelect() {
       }
     }
     if (digitalRead(3) == HIGH) return currentMode;
-    delay(60);
+    delay(150);
   } while (true);
 }
 
