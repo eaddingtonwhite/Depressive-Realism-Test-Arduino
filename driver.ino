@@ -50,11 +50,11 @@ int modeSelect() {
     if (digitalRead(13) == HIGH) {
       currentMode ^= 1; //Toggle current mode
       if (currentMode) {
-        // Set status light to purple
-        updateStatusLight(140, 46, 255);
-      } else {
         //Set mode light to orange
         updateStatusLight(255, 132, 0);
+      } else {
+         // Set status light to purple
+        updateStatusLight(140, 46, 255);
       }
     }
     if (digitalRead(3) == HIGH) return currentMode;
